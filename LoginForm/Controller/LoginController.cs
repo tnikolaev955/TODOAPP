@@ -9,13 +9,31 @@ namespace LoginForm.Controller
 {
     internal class LoginController
     {
-        static List<User> users = new List<User>()
-       {
-           new User("admin","adminpass"),
-       };
+        internal void AddUser(User user)
+        {
+            using (DatabaseEntities db = new DatabaseEntities())
+            {
+                var lastUser = db.Users.ToList().LastOrDefault();
+                if (lastUser == null)
+                {
+                    user.Id = 1;
+                }
+                else
+                {
+                    user.Id = lastUser.Id + 1;
+                }
+
+                db.Users.Add(user);
+                db.SaveChanges();
+            }
+        }
         public List<User> GetAllUsers()
         {
-            return users;
+            using (DatabaseEntities db = new DatabaseEntities())
+            {
+                return db.Users.ToList();
+            }
         }
     }
 }
+

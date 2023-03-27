@@ -71,6 +71,13 @@ namespace LoginForm.View
             }
         }
 
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            RegisterView m = new RegisterView();
+            this.Hide();
+            m.Show();
+        }
     }
 }
 
