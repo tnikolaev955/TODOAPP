@@ -13,10 +13,10 @@ namespace LoginForm
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DatabaseEntities : DbContext
+    public partial class ToDoAppSystemEntities : DbContext
     {
-        public DatabaseEntities()
-            : base("name=DatabaseEntities")
+        public ToDoAppSystemEntities()
+            : base("name=ToDoAppSystemEntities")
         {
         }
     

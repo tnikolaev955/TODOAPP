@@ -11,7 +11,7 @@ namespace LoginForm.Controller
     {
         internal void AddUser(User user)
         {
-            using (DatabaseEntities db = new DatabaseEntities())
+            using (ToDoAppSystemEntities db = new ToDoAppSystemEntities())
             {
                 var lastUser = db.Users.ToList().LastOrDefault();
                 if (lastUser == null)
@@ -29,7 +29,7 @@ namespace LoginForm.Controller
         }
         public List<User> GetAllUsers()
         {
-            using (DatabaseEntities db = new DatabaseEntities())
+            using (ToDoAppSystemEntities db = new ToDoAppSystemEntities())
             {
                 return db.Users.ToList();
             }
