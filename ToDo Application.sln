@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33209.295
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm", "LoginForm\LoginForm.csproj", "{46A5852E-B012-41C4-B8C3-2E159116635E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoAppSystem", "LoginForm\ToDoAppSystem.csproj", "{46A5852E-B012-41C4-B8C3-2E159116635E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
