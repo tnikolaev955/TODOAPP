@@ -39,7 +39,7 @@ namespace LoginForm.View
             m.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
 
         }

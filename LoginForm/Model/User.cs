@@ -76,6 +76,11 @@ namespace LoginForm.Model
             }
         }
 
+        private object DbContext(User user)
+        {
+            throw new NotImplementedException();
+        }
+
         public void DeleteUserById(int userId)
         {
             var userRepository = new UserRepository();
@@ -98,9 +103,9 @@ namespace LoginForm.Model
         public class MyDbContext : DbContext
         {
             public DbSet<User> Users { get; set; }
-            public MyDbContext() : base("name=MyConnectionString");
-
-      
+            public MyDbContext() : base("name=MyConnectionString")
+            {
+            }
         }
     }
 }
