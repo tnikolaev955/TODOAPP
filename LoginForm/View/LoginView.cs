@@ -53,7 +53,7 @@ namespace LoginForm.View
                 if (correctPassword)
                 {
                     Console.WriteLine("PASSWORD IS CORRECT");
-                    MainView mainpage = new MainView();
+                    MainView mainpage = new MainView(ListBox);
                     this.Hide();
                     mainpage.Show();
                 }
