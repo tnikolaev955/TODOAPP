@@ -13,13 +13,13 @@ namespace LoginForm.View
 {
     public partial class RegisterView : Form
     {
-        LoginController controller = new LoginController();
+        readonly LoginController controller = new LoginController();
         public RegisterView()
         {
             InitializeComponent();
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
+        private void BtnRegister_Click(object sender, EventArgs e)
         {
            string username = textBox1.Text;
            string password = textBox2.Text;
@@ -27,9 +27,11 @@ namespace LoginForm.View
            {
                 MessageBox.Show("Please enter your username");
            }
-            User user = new User();
-            user.Username = username;
-            user.Password = password;
+            User user = new User
+            {
+                Username = username,
+                Password = password
+            };
 
             controller.AddUser(user);
             LoginView m = new LoginView();
