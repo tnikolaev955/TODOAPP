@@ -14,7 +14,7 @@ namespace LoginForm.View
 {
     public partial class LoginView : Form
     {
-        LoginController loginController = new LoginController();
+        readonly LoginController loginController = new LoginController();
         public LoginView()
         {
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace LoginForm.View
 
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void BtnLogin_Click(object sender, EventArgs e)
         {
             string username = textBox1.Text;
             string password = textBox2.Text;

@@ -28,3 +28,12 @@ C:\Users\student\Documents\ToDoAppSystem\LoginForm\obj\Debug\LoginForm.csproj.Co
 C:\Users\student\Documents\ToDoAppSystem\LoginForm\obj\Debug\LoginForm.csproj.CopyComplete
 C:\Users\student\Documents\ToDoAppSystem\LoginForm\obj\Debug\LoginForm.exe
 C:\Users\student\Documents\ToDoAppSystem\LoginForm\obj\Debug\LoginForm.pdb
+C:\Users\Hristiqn\Source\Repos\TODoAppSystem\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
+C:\Users\Hristiqn\Source\Repos\TODoAppSystem\LoginForm\obj\Debug\LoginForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hristiqn\Source\Repos\TODoAppSystem\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+C:\Users\Hristiqn\Source\Repos\TODoAppSystem\LoginForm\obj\Debug\LoginForm.View.LoginView.resources
+C:\Users\Hristiqn\Source\Repos\TODoAppSystem\LoginForm\obj\Debug\LoginForm.View.RegisterView.resources
+C:\Users\Hristiqn\Source\Repos\TODoAppSystem\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
+C:\Users\Hristiqn\Source\Repos\TODoAppSystem\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\Hristiqn\Source\Repos\TODoAppSystem\LoginForm\obj\Debug\LoginForm.exe
+C:\Users\Hristiqn\Source\Repos\TODoAppSystem\LoginForm\obj\Debug\LoginForm.pdb
