@@ -88,8 +88,7 @@ namespace LoginForm.Model
 
             if (userToDelete == null)
             {
-                // User with specified ID doesn't exist
-                // Handle this however you want (e.g. throw an exception, return a message)
+                throw new ArgumentException("User with the specified ID doesn't exist");
             }
             else
             {
