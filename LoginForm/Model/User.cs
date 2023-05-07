@@ -64,7 +64,7 @@ public class UserRepository
     {
         // Delete the specified user from your data source
         // Example implementation using Entity Framework:
-        using (var dbContext = new MyDbContext())
+        using (DbContext dbContext = new DbContext())
         {
             dbContext.Users.Remove(user);
             dbContext.SaveChanges();
