@@ -24,6 +24,8 @@ namespace LoginForm.Model
     {
         User GetUserById(int userId);
         void DeleteUser(User user);
+        void DeleteUser1(User User);
+        void DeleteUserById(int userId);
     }
 
     public class User
@@ -50,15 +52,13 @@ namespace LoginForm.Model
         public User GetUserById(int userId)
         {
             using (var dbContext = new MyDbContext())
-            // Return null if no user is found with the specified ID
-            // Example implementation using Entity Framework:
-            using (var DbContext = new MyDbContext())
-            {
-                return dbContext.Users.FirstOrDefault(u => u.Id == userId);
-            }
+            
+        {
+            return dbContext.Users.FirstOrDefault(u => u.Id == userId);
         }
+    }
 
-        public void DeleteUser(User User)
+        public void DeleteUser1(User User)
         {
             using (MyDbContext dbContext = new MyDbContext())
             {
@@ -76,7 +76,7 @@ namespace LoginForm.Model
             }
         }
 
-        private object DbContext(User user)
+        private static object DbContext(User user)
         {
             throw new NotImplementedException();
         }
@@ -95,6 +95,21 @@ namespace LoginForm.Model
             {
                 userRepository.DeleteUser(userToDelete);
             }
+        }
+
+        private void DeleteUser(User userToDelete)
+        {
+            throw new NotImplementedException();
+        }
+
+        User IUserRepository.GetUserById(int userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IUserRepository.DeleteUser(User user)
+        {
+            throw new NotImplementedException();
         }
     }
 
