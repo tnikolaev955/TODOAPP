@@ -63,7 +63,8 @@ namespace LoginForm.View
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
-            string SearchText = textBox1.Text;
+            string text = textBox1.Text;
+            string SearchText = text;
         }
     }
 }

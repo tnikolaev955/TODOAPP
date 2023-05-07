@@ -133,8 +133,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "MainView";
-            this.Text = "MainView";
-            this.Load += new System.EventHandler(this.MainView_Load);
+            this.Text = "MainView";     
    
             this.ResumeLayout(false);
             this.PerformLayout();
