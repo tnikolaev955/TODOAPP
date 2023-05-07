@@ -38,5 +38,10 @@ namespace LoginForm.View
             this.Hide();
             m.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
