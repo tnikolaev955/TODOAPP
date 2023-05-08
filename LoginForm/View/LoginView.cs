@@ -53,7 +53,7 @@ namespace LoginForm.View
                 if (correctPassword)
                 {
                     Console.WriteLine("PASSWORD IS CORRECT");
-                    MainView mainpage = new MainView();
+                    MainView mainpage = new MainView(ListBox);
                     this.Hide();
                     mainpage.Show();
                 }
@@ -72,11 +72,11 @@ namespace LoginForm.View
         }
 
 
-        private void btnRegister_Click(object sender, EventArgs e)
+        private void BtnRegister_Click(object sender, EventArgs e)
         {
             RegisterView m = new RegisterView();
             this.Hide();
-            m.Show();
+           m.Show();
         }
     }
 }
